@@ -1,0 +1,28 @@
+
+
+
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+
+  <nz-form-item>
+
+    <nz-form-control nzErrorTip="请输入用户名!">
+
+      <input type="text" nz-input formControlName="username" placeholder="请输入用户名" style="width: 160px;" />
+
+    </nz-form-control>
+
+  </nz-form-item>
+
+  <nz-form-item>
+
+    <nz-form-control nzErrorTip="请输入职位!">
+
+      <input type="text" nz-input formControlName="position" placeholder="请输入职位" style="width: 160px;"/>
+
+    </nz-form-control>
+
+  </nz-form-item>
+
+  <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">确认</button>
+
+</form>

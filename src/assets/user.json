@@ -1,0 +1,29 @@
+{
+
+  "users": [
+
+    {
+
+      "uuid": 1,
+
+      "name": "Jimmy",
+
+      "position": "Frontend"
+
+    },
+
+    {
+
+      "uuid": 2,
+
+      "name": "Jim",
+
+      "position": "Backend"
+
+    }
+
+  ],
+
+  "environment": "development"
+
+}

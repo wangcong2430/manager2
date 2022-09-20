@@ -1,0 +1,39 @@
+
+<button nz-button  [nzType]="'primary'" (click)="goInfo()">添加</button>
+<nz-table #basicTable [nzData]="list">
+
+  <thead>
+
+    <tr>
+
+      <th>姓名</th>
+
+      <th>位置</th>
+
+      <th>操作</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <!-- 对获取到的数据进行遍历 -->
+
+    <tr *ngFor="let data of basicTable.data">
+
+      <td>{{data.name}}</td>
+
+      <td>{{data.position}}</td>
+
+      <td>
+        <a style="color: blue;margin-right: 15px;"  (click)="edit(data)">编辑</a>
+        <a style="color: #f00;"  (click)="delete(data)">删除</a>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+
+</nz-table>
